@@ -8,7 +8,7 @@ public class Solution {
 
         for (int i = 0; i < words.length; i++) {
             if (isVowelString(words[i])) {
-                prefixSum[i+1]=++prefixSum[i];
+                prefixSum[i+1]=prefixSum[i]+1;
             }
             else{
                 prefixSum[i+1]=prefixSum[i];
